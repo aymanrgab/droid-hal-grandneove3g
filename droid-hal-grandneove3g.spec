@@ -7,6 +7,21 @@
 %define vendor_pretty Samsung
 %define device_pretty Grand Neo Plus
 
+%define android_config \
+#define MALI_QUIRKS 1\
+%{nil}
+
+%define straggler_files \
+/bugreports\
+/d\
+/file_contexts.bin\
+/property_contexts\
+/sdcard\
+/selinux_version\
+/service_contexts\
+/vendor\
+%{nil}
+
 %define installable_zip 1
 
 %include rpm/dhd/droid-hal-device.inc
